@@ -1,0 +1,45 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7z010clg400-1",
+      "gen_directory": "../../../../verilog.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.1"
+    },
+    "design_tree": {
+      "tcc_encoder_3gpp_0": "",
+      "gig_ethernet_pcs_pma_0": "",
+      "c_addsub_0": "",
+      "clk_wiz_0": ""
+    },
+    "components": {
+      "tcc_encoder_3gpp_0": {
+        "vlnv": "xilinx.com:ip:tcc_encoder_3gpp:5.0",
+        "xci_name": "design_1_tcc_encoder_3gpp_0_0",
+        "xci_path": "ip\\design_1_tcc_encoder_3gpp_0_0\\design_1_tcc_encoder_3gpp_0_0.xci",
+        "inst_hier_path": "tcc_encoder_3gpp_0"
+      },
+      "gig_ethernet_pcs_pma_0": {
+        "vlnv": "xilinx.com:ip:gig_ethernet_pcs_pma:16.2",
+        "xci_name": "design_1_gig_ethernet_pcs_pma_0_0",
+        "xci_path": "ip\\design_1_gig_ethernet_pcs_pma_0_0\\design_1_gig_ethernet_pcs_pma_0_0.xci",
+        "inst_hier_path": "gig_ethernet_pcs_pma_0"
+      },
+      "c_addsub_0": {
+        "vlnv": "xilinx.com:ip:c_addsub:12.0",
+        "xci_name": "design_1_c_addsub_0_0",
+        "xci_path": "ip\\design_1_c_addsub_0_0\\design_1_c_addsub_0_0.xci",
+        "inst_hier_path": "c_addsub_0"
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "design_1_clk_wiz_0_0",
+        "xci_path": "ip\\design_1_clk_wiz_0_0\\design_1_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0"
+      }
+    }
+  }
+}

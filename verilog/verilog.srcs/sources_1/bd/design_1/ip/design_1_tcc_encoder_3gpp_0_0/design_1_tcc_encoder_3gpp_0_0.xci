@@ -1,0 +1,429 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "design_1_tcc_encoder_3gpp_0_0",
+    "cell_name": "tcc_encoder_3gpp_0",
+    "component_reference": "xilinx.com:ip:tcc_encoder_3gpp:5.0",
+    "ip_revision": "19",
+    "gen_directory": "../../../../../../verilog.gen/sources_1/bd/design_1/ip/design_1_tcc_encoder_3gpp_0_0",
+    "parameters": {
+      "component_parameters": {
+        "Component_Name": [ { "value": "design_1_tcc_encoder_3gpp_0_0", "resolve_type": "user", "usage": "all" } ],
+        "Number_Of_Channels": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "Multiplex_tail_bits": [ { "value": "True", "resolve_type": "user", "format": "bool", "usage": "all" } ],
+        "Coding_Rate": [ { "value": "1/3", "resolve_type": "user", "usage": "all" } ],
+        "External_Ram": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
+        "Address_Generator": [ { "value": "Internal", "resolve_type": "user", "usage": "all" } ],
+        "Address_Width": [ { "value": "13", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
+        "BLOCK_SIZE_VALID": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
+        "ND": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
+        "RFD": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
+        "RFD_IN": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
+        "CE": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
+        "SCLR": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ]
+      },
+      "model_parameters": {
+        "c_external_ram": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "c_external_addr_gen": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "c_ext_iaddr_width": [ { "value": "13", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "c_has_ce": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "c_has_rfd_in": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "c_has_nd": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "c_has_rfd": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "c_has_sclr": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "c_has_block_size_valid": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "c_num_channels": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "c_rate_1_5": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "c_mux_tail_bits": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "c_family": [ { "value": "zynq", "resolve_type": "generated", "usage": "all" } ],
+        "c_xdevicefamily": [ { "value": "zynq", "resolve_type": "generated", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "zynq" } ],
+        "BASE_BOARD_PART": [ { "value": "" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xc7z010" } ],
+        "PACKAGE": [ { "value": "clg400" } ],
+        "PREFHDL": [ { "value": "VERILOG" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
+        "SPEEDGRADE": [ { "value": "-1" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "19" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../verilog.gen/sources_1/bd/design_1/ip/design_1_tcc_encoder_3gpp_0_0" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2023.1" } ],
+        "SYNTHESISFLOW": [ { "value": "OUT_OF_CONTEXT" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "clk": [ { "direction": "in" } ],
+        "block_size": [ { "direction": "in", "size_left": "12", "size_right": "0" } ],
+        "fd_in": [ { "direction": "in" } ],
+        "data_in": [ { "direction": "in", "size_left": "0", "size_right": "0" } ],
+        "rffd": [ { "direction": "out" } ],
+        "rsc1_systematic": [ { "direction": "out", "size_left": "0", "size_right": "0" } ],
+        "rsc1_parity0": [ { "direction": "out", "size_left": "0", "size_right": "0" } ],
+        "rsc1_tail": [ { "direction": "out" } ],
+        "rsc2_parity0": [ { "direction": "out", "size_left": "0", "size_right": "0" } ],
+        "rsc2_tail": [ { "direction": "out" } ],
+        "rdy": [ { "direction": "out" } ]
+      },
+      "interfaces": {
+        "block_size_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "block_size" } ]
+          }
+        },
+        "clk_intf": {
+          "vlnv": "xilinx.com:signal:clock:1.0",
+          "abstraction_type": "xilinx.com:signal:clock_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "ASSOCIATED_BUSIF": [ { "value": "mem1_doutb_intf:mem1_douta_intf:mem1_addra_intf:mem1_wea_intf:mem1_enb_intf:mem1_ena_intf:mem0_doutb_intf:mem0_douta_intf:mem0_addra_intf:mem0_wea_intf:mem0_enb_intf:mem0_ena_intf:mem_addrb_intf:mem_dina_intf:ext_iaddr_rdy_intf:ext_iaddr_rffd_intf:ext_iaddr_ce_intf:ext_iaddr_intf:rdy_intf:rsc2_tail_intf:rsc2_parity1_intf:rsc2_parity0_intf:rsc2_systematic_intf:rsc1_tail_intf:rsc1_parity1_intf:rsc1_parity0_intf:rsc1_systematic_intf:block_size_valid_intf:rfd_intf:rffd_intf:nd_intf:data_in_intf:rfd_in_intf:fd_in_intf:block_size_intf", "value_src": "constant", "value_permission": "bd", "usage": "all" } ],
+            "ASSOCIATED_RESET": [ { "value": "sclr", "value_src": "constant", "value_permission": "bd", "usage": "all" } ],
+            "ASSOCIATED_CLKEN": [ { "value": "ce", "value_src": "constant", "value_permission": "bd", "usage": "all" } ],
+            "FREQ_HZ": [ { "value": "100000000", "value_permission": "bd", "resolve_type": "user", "format": "long", "usage": "all" } ],
+            "FREQ_TOLERANCE_HZ": [ { "value": "0", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "PHASE": [ { "value": "0.0", "value_permission": "bd", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
+            "CLK_DOMAIN": [ { "value": "", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_PORT": [ { "value": "", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "CLK": [ { "physical_name": "clk" } ]
+          }
+        },
+        "sclr_intf": {
+          "vlnv": "xilinx.com:signal:reset:1.0",
+          "abstraction_type": "xilinx.com:signal:reset_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "POLARITY": [ { "value": "ACTIVE_HIGH", "value_src": "constant", "usage": "all" } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
+          }
+        },
+        "ce_intf": {
+          "vlnv": "xilinx.com:signal:clockenable:1.0",
+          "abstraction_type": "xilinx.com:signal:clockenable_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "POLARITY": [ { "value": "ACTIVE_HIGH", "value_src": "constant", "usage": "all" } ]
+          }
+        },
+        "fd_in_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "fd_in" } ]
+          }
+        },
+        "rfd_in_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          }
+        },
+        "data_in_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "data_in" } ]
+          }
+        },
+        "nd_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          }
+        },
+        "rffd_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "rffd" } ]
+          }
+        },
+        "rfd_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          }
+        },
+        "block_size_valid_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          }
+        },
+        "rsc1_systematic_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "rsc1_systematic" } ]
+          }
+        },
+        "rsc1_parity0_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "rsc1_parity0" } ]
+          }
+        },
+        "rsc1_parity1_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          }
+        },
+        "rsc1_tail_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "rsc1_tail" } ]
+          }
+        },
+        "rsc2_systematic_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          }
+        },
+        "rsc2_parity0_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "rsc2_parity0" } ]
+          }
+        },
+        "rsc2_parity1_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          }
+        },
+        "rsc2_tail_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "rsc2_tail" } ]
+          }
+        },
+        "rdy_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "rdy" } ]
+          }
+        },
+        "ext_iaddr_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          }
+        },
+        "ext_iaddr_ce_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          }
+        },
+        "ext_iaddr_rffd_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          }
+        },
+        "ext_iaddr_rdy_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          }
+        },
+        "mem_dina_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          }
+        },
+        "mem_addrb_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          }
+        },
+        "mem0_ena_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          }
+        },
+        "mem0_enb_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          }
+        },
+        "mem0_wea_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          }
+        },
+        "mem0_addra_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          }
+        },
+        "mem0_douta_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          }
+        },
+        "mem0_doutb_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          }
+        },
+        "mem1_ena_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          }
+        },
+        "mem1_enb_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          }
+        },
+        "mem1_wea_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          }
+        },
+        "mem1_addra_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          }
+        },
+        "mem1_douta_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          }
+        },
+        "mem1_doutb_intf": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          }
+        }
+      }
+    }
+  }
+}
